@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QbbK2HRFN9hpLJlXxkxiT17z+UmKg91oK14Um5yeyGs=",
+  "Source": "EventManagementService",
+  "BasePath": "_content/EventManagementService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

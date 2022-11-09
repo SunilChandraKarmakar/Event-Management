@@ -1,0 +1,12 @@
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\bin\Debug\net6.0\EventManagementService.Repository.deps.json
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\bin\Debug\net6.0\EventManagementService.Repository.dll
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\bin\Debug\net6.0\EventManagementService.Repository.pdb
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\obj\Debug\net6.0\EventManagementService.Repository.csproj.AssemblyReference.cache
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\obj\Debug\net6.0\EventManagementService.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\obj\Debug\net6.0\EventManagementService.Repository.AssemblyInfoInputs.cache
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\obj\Debug\net6.0\EventManagementService.Repository.AssemblyInfo.cs
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\obj\Debug\net6.0\EventManagementService.Repository.csproj.CoreCompileInputs.cache
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\obj\Debug\net6.0\EventManagementService.Repository.dll
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\obj\Debug\net6.0\refint\EventManagementService.Repository.dll
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\obj\Debug\net6.0\EventManagementService.Repository.pdb
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Repository\obj\Debug\net6.0\ref\EventManagementService.Repository.dll

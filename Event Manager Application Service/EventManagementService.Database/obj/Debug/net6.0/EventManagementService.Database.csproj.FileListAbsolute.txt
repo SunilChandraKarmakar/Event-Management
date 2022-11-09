@@ -1,0 +1,17 @@
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\bin\Debug\net6.0\EventManagementService.Database.deps.json
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\bin\Debug\net6.0\EventManagementService.Database.dll
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\bin\Debug\net6.0\EventManagementService.Database.pdb
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\bin\Debug\net6.0\EventManagementService.Model.dll
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\bin\Debug\net6.0\EventManagementService.Model.pdb
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\EventManagementService.Database.csproj.AssemblyReference.cache
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\EventManagementService.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\EventManagementService.Database.AssemblyInfoInputs.cache
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\EventManagementService.Database.AssemblyInfo.cs
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\EventManagementService.Database.csproj.CoreCompileInputs.cache
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\EventManagementService.Database.csproj.CopyComplete
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\EventManagementService.Database.dll
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\refint\EventManagementService.Database.dll
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\EventManagementService.Database.pdb
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\ref\EventManagementService.Database.dll
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\bin\Debug\net6.0\EventManagementService.Database.runtimeconfig.json
+D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Database\obj\Debug\net6.0\EventManagementService.Database.genruntimeconfig.cache
