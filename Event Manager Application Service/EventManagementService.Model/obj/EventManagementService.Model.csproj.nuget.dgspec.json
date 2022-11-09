@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\EventManagementService.Model.csproj": {}
+    "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\EventManagementService.Model.csproj": {}
   },
   "projects": {
-    "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\EventManagementService.Model.csproj": {
+    "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\EventManagementService.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\EventManagementService.Model.csproj",
+        "projectUniqueName": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\EventManagementService.Model.csproj",
         "projectName": "EventManagementService.Model",
-        "projectPath": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\EventManagementService.Model.csproj",
+        "projectPath": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\EventManagementService.Model.csproj",
         "packagesPath": "C:\\Users\\Sunil\\.nuget\\packages\\",
-        "outputPath": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\obj\\",
+        "outputPath": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

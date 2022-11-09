@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "56uzkvKZOkcRKbUO4e14RngircPpc5eukkYXfeiffKUAybKY8+h8iUh5/ECks1rKWTnj4lD/N9bRISgyk98cyw==",
+  "dgSpecHash": "pi7+08b3urA1B2LzcHpg5UYzvytz3jjeDFsGNvfiqVQdyL2deSK/F7Ycsto4QqSSRkVwGOemLjkgtOblWRpE3g==",
   "success": true,
-  "projectFilePath": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService\\EventManagementService.csproj",
+  "projectFilePath": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService\\EventManagementService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sunil\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Sunil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

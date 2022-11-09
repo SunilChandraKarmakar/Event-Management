@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "abEL+EhMerGpYENk3e9U2L1H0VBLwVA/61MtojjINjc4jcEeKcFOWXLIZu/J76UWw2z+qFsKqv+YBd7AYkizZg==",
+  "dgSpecHash": "7XzZxuIoeVu5vOgkv7tE9Jfqa+FxDd2S8fUt+t/sRhU//J1QFba8RJMc6GmBDTLt15MHgXmkHsw3fKWQsXf8CQ==",
   "success": true,
-  "projectFilePath": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj",
+  "projectFilePath": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

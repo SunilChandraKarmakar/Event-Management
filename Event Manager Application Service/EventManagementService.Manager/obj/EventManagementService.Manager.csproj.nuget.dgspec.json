@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\EventManagementService.Manager.csproj": {}
+    "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\EventManagementService.Manager.csproj": {}
   },
   "projects": {
-    "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\EventManagementService.Manager.csproj": {
+    "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\EventManagementService.Manager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\EventManagementService.Manager.csproj",
+        "projectUniqueName": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\EventManagementService.Manager.csproj",
         "projectName": "EventManagementService.Manager",
-        "projectPath": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\EventManagementService.Manager.csproj",
+        "projectPath": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\EventManagementService.Manager.csproj",
         "packagesPath": "C:\\Users\\Sunil\\.nuget\\packages\\",
-        "outputPath": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\obj\\",
+        "outputPath": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Manager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj": {
-                "projectPath": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj"
+              "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj": {
+                "projectPath": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj": {
+    "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj",
+        "projectUniqueName": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj",
         "projectName": "EventManagementService.Repository",
-        "projectPath": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj",
+        "projectPath": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\EventManagementService.Repository.csproj",
         "packagesPath": "C:\\Users\\Sunil\\.nuget\\packages\\",
-        "outputPath": "D:\\C# - Work\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\obj\\",
+        "outputPath": "D:\\Event-Management\\Event Manager Application Service\\EventManagementService.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -10,3 +10,15 @@ D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementS
 D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\refint\EventManagementService.Model.dll
 D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\EventManagementService.Model.pdb
 D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\ref\EventManagementService.Model.dll
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\bin\Debug\net6.0\EventManagementService.Model.deps.json
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\bin\Debug\net6.0\EventManagementService.Model.dll
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\bin\Debug\net6.0\EventManagementService.Model.pdb
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\EventManagementService.Model.csproj.AssemblyReference.cache
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\EventManagementService.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\EventManagementService.Model.AssemblyInfoInputs.cache
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\EventManagementService.Model.AssemblyInfo.cs
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\EventManagementService.Model.csproj.CoreCompileInputs.cache
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\EventManagementService.Model.dll
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\refint\EventManagementService.Model.dll
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\EventManagementService.Model.pdb
+D:\Event-Management\Event Manager Application Service\EventManagementService.Model\obj\Debug\net6.0\ref\EventManagementService.Model.dll

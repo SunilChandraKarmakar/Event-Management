@@ -13,3 +13,18 @@ D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementS
 D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\refint\EventManagementService.Manager.dll
 D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\EventManagementService.Manager.pdb
 D:\C# - Work\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\ref\EventManagementService.Manager.dll
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\bin\Debug\net6.0\EventManagementService.Manager.deps.json
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\bin\Debug\net6.0\EventManagementService.Manager.dll
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\bin\Debug\net6.0\EventManagementService.Manager.pdb
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\bin\Debug\net6.0\EventManagementService.Repository.dll
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\bin\Debug\net6.0\EventManagementService.Repository.pdb
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\EventManagementService.Manager.csproj.AssemblyReference.cache
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\EventManagementService.Manager.GeneratedMSBuildEditorConfig.editorconfig
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\EventManagementService.Manager.AssemblyInfoInputs.cache
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\EventManagementService.Manager.AssemblyInfo.cs
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\EventManagementService.Manager.csproj.CoreCompileInputs.cache
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\EventManagementService.Manager.csproj.CopyComplete
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\EventManagementService.Manager.dll
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\refint\EventManagementService.Manager.dll
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\EventManagementService.Manager.pdb
+D:\Event-Management\Event Manager Application Service\EventManagementService.Manager\obj\Debug\net6.0\ref\EventManagementService.Manager.dll
