@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-md-12">
+      <h3 class="text-center">Create Venue</h3>
+      <hr>
+    </div>
+  </div>
+  <div class="row mt-3 justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <form class="row g-3" autocomplete="off">
+            <div class="col-md-12">
+              <label for="title" class="form-label">Title</label>
+              <input type="text" class="form-control" id="title" name="title" [(ngModel)]="model.title">
+            </div>
+            <div class="col-md-4">
+              <label for="eventType" class="form-label">Event Type</label>
+              <select class="form-control"  name="eventType" [(ngModel)]="model.eventTypeId">
+                <option *ngFor="let eventType of eventTypeSelectList" [value]="eventType.id">{{ eventType.name }}</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="venueType" class="form-label">Venue Type</label>
+              <select class="form-control" name="venueType" [(ngModel)]="model.venueTypeId">
+                <option *ngFor="let venueType of venueTypeSelectList" [value]="venueType.id">{{ venueType.name }}</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="noOfGuest" class="form-label">No. of Guest</label>
+              <input type="number" class="form-control" id="noOfGuest" name="noOfGuest" [(ngModel)]="model.noOfGuest">
+            </div>
+            <div class="col-md-4">
+              <label for="bookingDate" class="form-label">Booking Date</label>
+              <input type="date" class="form-control" id="bookingDate" name="bookingDate" [(ngModel)]="model.bookingDate">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-sm btn-outline-success" (click)="onSaveVenue()"><i class="fas fa-save"></i> Save</button>
+              <a class="btn btn-sm btn-outline-info" routerLink="/venues" style="margin-left: 5px">
+                <i class="fas fa-list"></i> Goto List
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

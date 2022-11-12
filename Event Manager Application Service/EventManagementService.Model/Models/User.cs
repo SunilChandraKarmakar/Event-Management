@@ -6,8 +6,8 @@ namespace EventManagementService.Model.Models
     {
         public User()
         {
-            Foods = new List<Food>();
-            Venues = new List<Venue>();
+            Foods = new HashSet<Food>();
+            Venues = new HashSet<Venue>();
         }
 
         public string FullName { get; set; }

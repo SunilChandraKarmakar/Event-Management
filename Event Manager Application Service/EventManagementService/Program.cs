@@ -1,5 +1,8 @@
 using EventManagementService.DatabaseSetting;
 using EventManagementService.Model.Models;
+using EventManagementService.RepositoryService.EventTypeService;
+using EventManagementService.RepositoryService.VenueService;
+using EventManagementService.RepositoryService.VenueTypeService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -51,7 +54,14 @@ builder.Services.AddIdentity<User, IdentityRole>(option =>
        { }).AddEntityFrameworkStores<EventManagementDbContext>();
 builder.Services.AddAutoMapper(typeof(Program));
 
-builder.Services.AddControllers();
+builder.Services.AddTransient<IVenueRepository, VenueRepository>();
+builder.Services.AddTransient<IEventTypeRepository, EventTypeRepository>();
+builder.Services.AddTransient<IVenueTypeRepository, VenueTypeRepository>();
+
+builder.Services.AddControllers()
+       .AddNewtonsoftJson(options =>
+         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+   
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

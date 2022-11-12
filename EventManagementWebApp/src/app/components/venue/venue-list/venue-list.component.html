@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-md-12">
+      <h3 class="text-center">Venues</h3>
+      <hr>
+      <a class="btn btn-outline-primary" routerLink="/venue/create"><i class="fas fa-plus"></i> Create Venue</a>      
+    </div>
+    <div class="row mt-4 mb-4">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+              <thead>
+                <tr>
+                  <th>Basic Info</th>
+                  <th>Venue Info</th>
+                  <th>Guest Info and Date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let venue of venues">
+                  <td> 
+                    Title : {{ venue.title }}
+                  </td>
+                  <td>
+                    Event Type : {{ venue.eventType.name }} <br>
+                    Venue Type : {{ venue.venueType.name }} 
+                  </td>
+                  <td>
+                    No. of Guest : {{ venue.noOfGuest }} <br>
+                    Booking date : {{ venue.bookingDate | date: "dd/MM/YYYY" }}
+                  </td>
+                  <td>
+                    <a class="btn btn-sm btn-info" routerLink="/venue/edit/{{venue.id}}"><i class="fas fa-edit"></i> Edit</a>
+                    <a class="btn btn-sm btn-danger" (click)="onDelete(venue.id)" style="margin-left: 5px;">
+                      <i class="fas fa-trash"></i> Delete
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                 <tr>
+                  <th>Basic Info</th>
+                  <th>Venue Info</th>
+                  <th>Guest Info and Date</th>
+                  <th>Action</th>
+                </tr>
+              </tfoot>
+            </table>   
+          </div>
+        </div>     
+      </div>
+    </div>
+  </div>
+</div>
