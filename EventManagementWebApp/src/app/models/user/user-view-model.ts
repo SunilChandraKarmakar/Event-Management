@@ -6,4 +6,6 @@ export class UserViewModel {
     password: string;
     createdTime: Date;
     token: string;
+    mobileNumber: string;
+    address: string;
 }

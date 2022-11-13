@@ -68,6 +68,10 @@
                 </label>
               </div>
             </div>
+            <div class="col-md-4">
+              <label for="foodAmount" class="form-label">Food Amount</label>
+              <input type="number" class="form-control" id="foodAmount"  name="foodAmount" [(ngModel)]="model.foodAmount">
+            </div>
             <div class="col-12">
               <button type="submit" class="btn btn-sm btn-outline-success" (click)="onSaveVenue()"><i class="fas fa-save"></i> Save</button>
               <a class="btn btn-sm btn-outline-info" routerLink="/venues" style="margin-left: 5px">

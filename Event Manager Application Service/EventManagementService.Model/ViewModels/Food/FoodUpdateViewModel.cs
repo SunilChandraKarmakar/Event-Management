@@ -36,5 +36,10 @@ namespace EventManagementService.Model.ViewModels.Food
 
         [Display(Name = "Maharashtrian Thali")]
         public bool IsMaharashtrianThali { get; set; }
+
+        [Required(ErrorMessage = "Please, provied food amount.")]
+        [Display(Name = "Food Amount")]
+        [DataType(DataType.Currency)]
+        public double FoodAmount { get; set; }
     }
 }

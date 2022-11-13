@@ -34,6 +34,10 @@
               <label for="bookingDate" class="form-label">Booking Date</label>
               <input type="datetime-local" class="form-control" id="bookingDate" name="bookingDate" [(ngModel)]="model.bookingDate">
             </div>
+            <div class="col-md-4">
+              <label for="venueAmount" class="form-label">Venue Amount</label>
+              <input type="number" class="form-control" id="venueAmount" name="venueAmount" [(ngModel)]="model.venueAmount">
+            </div>
             <div class="col-12">
               <button type="submit" class="btn btn-sm btn-outline-success" (click)="onUpdateVenue()">
                 <i class="fas fa-save"></i> Update

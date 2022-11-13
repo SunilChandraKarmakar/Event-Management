@@ -96,6 +96,10 @@ export class VenueCreateComponent implements OnInit {
       this._toastrService.warning("Please, select booking date.", "Warning");
       return;
     }
+    else if(this.model.venueAmount == null || this.model.venueAmount == undefined) {
+      this._toastrService.warning("Please, provied amount.", "Warning");
+      return;
+    }
     else {
       this._spinnerService.show();
       this.model.userId = this._loginUserId!;

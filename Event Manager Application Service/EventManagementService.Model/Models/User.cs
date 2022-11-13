@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace EventManagementService.Model.Models
 {
@@ -14,6 +15,8 @@ namespace EventManagementService.Model.Models
         public string FullName { get; set; }
         public DateTime CreatedTime { get; set; }
         public DateTime LastModifiedTime { get; set; }
+        public string MobileNumber { get; set; }
+        public string Address { get; set; }
 
         public ICollection<Food> Foods { get; set; }
         public ICollection<Venue> Venues { get; set; }

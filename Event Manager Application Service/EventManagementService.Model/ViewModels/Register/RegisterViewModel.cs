@@ -16,5 +16,7 @@ namespace EventManagementService.Model.ViewModels.Register
         [Required(ErrorMessage = "Please, provied strong password")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+        public string MobileNumber { get; set; }
+        public string Address { get; set; }
     }
 }

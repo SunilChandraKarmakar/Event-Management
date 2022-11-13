@@ -9,4 +9,5 @@ export class FoodDeleteViewModel {
     isNorthIndianThali: boolean;
     isPunjabThali: boolean;
     isMaharashtrianThali: boolean;
+    foodAmount: number;
 }

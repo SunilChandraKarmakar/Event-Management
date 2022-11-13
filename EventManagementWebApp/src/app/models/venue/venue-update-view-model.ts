@@ -6,4 +6,5 @@ export class VenueUpdateViewModel {
     venueTypeId: number;
     noOfGuest: number;
     bookingDate: Date;
+    venueAmount: number;
 }

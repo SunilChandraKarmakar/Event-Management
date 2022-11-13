@@ -38,6 +38,11 @@ namespace EventManagementService.Model.Models
         [Display(Name = "Maharashtrian Thali")]
         public bool IsMaharashtrianThali { get; set; }
 
+        [Required(ErrorMessage = "Please, provied food amount.")]
+        [Display(Name = "Food Amount")]
+        [DataType(DataType.Currency)]
+        public double FoodAmount { get; set; }
+
         public User User { get; set; }
         public FoodType FoodType { get; set; }
         public MealType MealType { get; set; }

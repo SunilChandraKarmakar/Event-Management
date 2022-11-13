@@ -10,6 +10,7 @@ export class VenueViewModel {
     VenueTypeId: number;
     noOfGuest: number;
     bookingDate: Date;
+    venueAmount: number;
 
     user: UserViewModel;
     eventType: EventTypeViewModel;

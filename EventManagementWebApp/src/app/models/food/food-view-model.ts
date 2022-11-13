@@ -14,6 +14,7 @@ export class FoodViewModel {
     isNorthIndianThali: boolean;
     isPunjabThali: boolean;
     isMaharashtrianThali: boolean;
+    foodAmount: number;
 
     user: UserViewModel;
     foodType: FoodTypeViewModel;

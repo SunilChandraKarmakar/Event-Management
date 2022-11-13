@@ -8,4 +8,5 @@ export class FoodCreateViewModel {
     isNorthIndianThali: boolean;
     isPunjabThali: boolean;
     isMaharashtrianThali: boolean;
+    foodAmount: number;
 }

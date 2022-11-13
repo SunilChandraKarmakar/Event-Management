@@ -19,6 +19,7 @@ namespace EventManagementService.Model.ViewModels.Venue
         public int VenueTypeId { get; set; }
         public int NoOfGuest { get; set; }
         public DateTime BookingDate { get; set; }
+        public double VenueAmount { get; set; }
 
         public UserViewModel User { get; set; }
         public EventTypeViewModel EventType { get; set; }

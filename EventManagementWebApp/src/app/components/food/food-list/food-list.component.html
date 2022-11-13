@@ -33,6 +33,7 @@
                     <span *ngIf="food.isNorthIndianThali == true">North Indian Thali, </span>
                     <span *ngIf="food.isPunjabThali == true">Punjab Thali, </span>
                     <span *ngIf="food.isMaharashtrianThali == true">Maharashtrian Thali</span>
+                    <br> Price : {{ food.foodAmount }}
                   </td>
                   <td>
                     <a class="btn btn-sm btn-info" routerLink="/food/edit/{{food.id}}"><i class="fas fa-edit"></i> Edit</a>

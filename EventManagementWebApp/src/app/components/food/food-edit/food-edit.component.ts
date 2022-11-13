@@ -126,6 +126,10 @@ export class FoodEditComponent implements OnInit {
       this._toastrService.warning("Please, select dish type.", "Warning");
       return;
     }
+    else if(this.model.foodAmount == null || this.model.foodAmount == undefined) {
+      this._toastrService.warning("Please, provied amount.", "Warning");
+      return;
+    }
     else {
       this._spinnerService.show();
       this._foodService.update(this.model.id, this.model).subscribe((res) => {

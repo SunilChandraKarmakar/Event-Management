@@ -12,13 +12,15 @@
           <form class="row g-3" autocomplete="off">
             <div class="col-md-4">
               <label for="foodId" class="form-label">Food</label>
-              <select class="form-control"  name="foodId" [(ngModel)]="model.foodId">
+              <select class="form-control"  name="foodId" [(ngModel)]="model.foodId" 
+              (change)="onFoodChange(model.foodId)">
                 <option *ngFor="let food of foodSelectList" [value]="food.id">{{ food.title }}</option>
               </select>
             </div>
             <div class="col-md-4">
               <label for="venueId" class="form-label">Venue</label>
-              <select class="form-control" name="venueId" [(ngModel)]="model.venueId">
+              <select class="form-control" name="venueId" [(ngModel)]="model.venueId"
+              (change)="onVenueChange(model.venueId)">
                 <option *ngFor="let venue of venueSelectList" [value]="venue.id">{{ venue.title }}</option>
               </select>
             </div>
@@ -30,7 +32,7 @@
             </div>
             <div class="col-md-4">
               <label for="totalAmount" class="form-label">Total Amount</label>
-              <input type="number" class="form-control" name="totalAmount" [(ngModel)]="model.totalAmmount">
+              <input type="number" class="form-control" name="totalAmount" [(ngModel)]="model.totalAmmount" (click)="getTotalAmount()">
             </div>
             <div class="col-md-4">
               <label for="paymentDate" class="form-label">Payment Date</label>

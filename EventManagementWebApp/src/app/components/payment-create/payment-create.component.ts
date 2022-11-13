@@ -30,7 +30,11 @@ export class PaymentCreateComponent implements OnInit {
   paymentTypeSelectList: PaymentTypeViewModel[];
   foodSelectList: FoodViewModel[];
   venueSelectList: VenueViewModel[];
-  
+
+  // Total payment amount calculation
+  foodAmount: number = 0;
+  venueAmount: number = 0;
+
   constructor(private _paymentService: PaymentService, private _spinnerService: NgxSpinnerService, 
   private _toastrService: ToastrService, private _router: Router, private _paymentTypeService: PaymenttypeService, private _foodService: FoodService, private _venueService: VenueService) { }
 
@@ -89,6 +93,46 @@ export class PaymentCreateComponent implements OnInit {
       this._spinnerService.hide();
       this._toastrService.error("Venue can not load! Try again.", "Error");
     })
+  }
+
+  onFoodChange(foodId: number): void {
+    this._spinnerService.show();
+    this._foodService.getFood(foodId).subscribe((res) => {
+      if(this.model.totalAmmount == null || this.model.totalAmmount == undefined) this.model.totalAmmount = 0;
+      
+      this.foodAmount = 0;
+      this.foodAmount = res.foodAmount;
+      this._spinnerService.hide();
+      return;
+    },
+    (error) => {
+      this._spinnerService.hide();
+      this._toastrService.error("Food can not find! Try again.", "Error");
+      return
+    })
+  }
+
+  onVenueChange(venueId: number): void {
+    this._spinnerService.show();
+    this._venueService.getVenue(venueId).subscribe((res) => {
+      if(this.model.totalAmmount == null || this.model.totalAmmount == undefined) this.model.totalAmmount = 0;
+      
+      this.venueAmount = 0;
+      this.venueAmount = res.venueAmount;
+      this._spinnerService.hide();
+      return;
+    },
+    (error) => {
+      this._spinnerService.hide();
+      this._toastrService.error("Venue can not find! Try again.", "Error");
+      return
+    })
+  }
+
+  getTotalAmount(): void {
+    this.model.totalAmmount = this.foodAmount + this.venueAmount;
+    console.log(" ", this.foodAmount, this.venueAmount)
+    return;
   }
 
   onSavePayment(): void {

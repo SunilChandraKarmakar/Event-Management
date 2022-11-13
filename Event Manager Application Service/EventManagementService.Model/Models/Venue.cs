@@ -37,6 +37,11 @@ namespace EventManagementService.Model.Models
         [DataType(DataType.DateTime)]
         public DateTime BookingDate { get; set; }
 
+        [Required(ErrorMessage = "Please, provied venue amount.")]
+        [Display(Name = "Venue Amount")]
+        [DataType(DataType.Currency)]
+        public double VenueAmount { get; set; }
+
         public User User { get; set; }
         public EventType EventType { get; set; }
         public VenueType VenueType { get; set; }

@@ -29,7 +29,8 @@
                   </td>
                   <td>
                     No. of Guest : {{ venue.noOfGuest }} <br>
-                    Booking date : {{ venue.bookingDate | date: "dd/MM/YYYY" }}
+                    Booking date : {{ venue.bookingDate | date: "dd/MM/YYYY" }} <br>
+                    Proce : {{ venue.venueAmount }}
                   </td>
                   <td>
                     <a class="btn btn-sm btn-info" routerLink="/venue/edit/{{venue.id}}"><i class="fas fa-edit"></i> Edit</a>
