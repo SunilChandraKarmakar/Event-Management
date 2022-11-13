@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FoodCreateComponent } from './components/food/food-create/food-create.component';
+import { FoodEditComponent } from './components/food/food-edit/food-edit.component';
+import { FoodListComponent } from './components/food/food-list/food-list.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { VenueCreateComponent } from './components/venue/venue-create/venue-create.component';
@@ -15,7 +18,10 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
   { path: 'venues', component: VenueListComponent, pathMatch: 'full' },
   { path: 'venue/create', component: VenueCreateComponent, pathMatch: 'full' },
-  { path: 'venue/edit/:recordId', component: VenueEditComponent, pathMatch: 'full' }
+  { path: 'venue/edit/:recordId', component: VenueEditComponent, pathMatch: 'full' },
+  { path: 'foods', component: FoodListComponent, pathMatch: 'full' },
+  { path: 'food/create', component: FoodCreateComponent, pathMatch: 'full' },
+  { path: 'food/edit/:recordId', component: FoodEditComponent, pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -15,6 +15,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { VenueCreateComponent } from './components/venue/venue-create/venue-create.component';
 import { VenueListComponent } from './components/venue/venue-list/venue-list.component';
 import { VenueEditComponent } from './components/venue/venue-edit/venue-edit.component';
+import { FoodListComponent } from './components/food/food-list/food-list.component';
+import { FoodCreateComponent } from './components/food/food-create/food-create.component';
+import { FoodEditComponent } from './components/food/food-edit/food-edit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { VenueEditComponent } from './components/venue/venue-edit/venue-edit.com
     DashboardComponent,
     VenueCreateComponent,
     VenueListComponent,
-    VenueEditComponent
+    VenueEditComponent,
+    FoodListComponent,
+    FoodCreateComponent,
+    FoodEditComponent
   ],
   imports: [
     BrowserModule,

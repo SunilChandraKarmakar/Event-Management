@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-md-12">
+      <h3 class="text-center">Foods</h3>
+      <hr>
+      <a class="btn btn-outline-primary" routerLink="/food/create"><i class="fas fa-plus"></i> Create Food</a>      
+    </div>
+    <div class="row mt-4 mb-4">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+              <thead>
+                <tr>
+                  <th>Basic Info</th>
+                  <th>Type Info</th>
+                  <th>Thali Info</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let food of foods">
+                  <td> 
+                    Title : {{ food.title }}
+                  </td>
+                  <td>
+                    Food Type : {{ food.foodType.name }} <br>
+                    Meal Type : {{ food.mealType.name }} <br>
+                    Dish Type : {{ food.dishType.name }} 
+                  </td>
+                  <td>
+                    <span *ngIf="food.isSouthIndiaThali == true">South India Thali</span> 
+                    <span *ngIf="food.isNorthIndianThali == true">North Indian Thali</span>
+                    <span *ngIf="food.isPunjabThali == true">Punjab Thali</span>
+                    <span *ngIf="food.isMaharashtrianThali == true">Maharashtrian Thali</span>
+                  </td>
+                  <td>
+                    <a class="btn btn-sm btn-info" routerLink="/food/edit/{{food.id}}"><i class="fas fa-edit"></i> Edit</a>
+                    <a class="btn btn-sm btn-danger" (click)="onDelete(food.id)" style="margin-left: 5px;">
+                      <i class="fas fa-trash"></i> Delete
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                 <tr>
+                  <th>Basic Info</th>
+                  <th>Type Info</th>
+                  <th>Thali Info</th>
+                  <th>Action</th>
+                </tr>
+              </tfoot>
+            </table>   
+          </div>
+        </div>     
+      </div>
+    </div>
+  </div>
+</div>

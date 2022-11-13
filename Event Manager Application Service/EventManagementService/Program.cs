@@ -1,6 +1,10 @@
 using EventManagementService.DatabaseSetting;
 using EventManagementService.Model.Models;
+using EventManagementService.RepositoryService.DishService;
 using EventManagementService.RepositoryService.EventTypeService;
+using EventManagementService.RepositoryService.FoodService;
+using EventManagementService.RepositoryService.FoodTypeService;
+using EventManagementService.RepositoryService.MealTypeService;
 using EventManagementService.RepositoryService.VenueService;
 using EventManagementService.RepositoryService.VenueTypeService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -57,6 +61,10 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddTransient<IVenueRepository, VenueRepository>();
 builder.Services.AddTransient<IEventTypeRepository, EventTypeRepository>();
 builder.Services.AddTransient<IVenueTypeRepository, VenueTypeRepository>();
+builder.Services.AddTransient<IFoodTypeRepository, FoodTypeRepository>();
+builder.Services.AddTransient<IMealTypeRepository, MealTypeRepository>();
+builder.Services.AddTransient<IDishTypeRepository, DishTypeRepository>();
+builder.Services.AddTransient<IFoodRepository, FoodRepository>();
 
 builder.Services.AddControllers()
        .AddNewtonsoftJson(options =>
