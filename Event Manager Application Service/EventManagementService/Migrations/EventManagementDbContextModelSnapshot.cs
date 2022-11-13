@@ -145,6 +145,67 @@ namespace EventManagementService.Migrations
                     b.ToTable("MealTypes");
                 });
 
+            modelBuilder.Entity("EventManagementService.Model.Models.Payment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("FoodId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsPaymentComplete")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("PaymentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PaymentTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalAmmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("VenueId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FoodId");
+
+                    b.HasIndex("PaymentTypeId");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("VenueId");
+
+                    b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("EventManagementService.Model.Models.PaymentType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PaymentTypes");
+                });
+
             modelBuilder.Entity("EventManagementService.Model.Models.User", b =>
                 {
                     b.Property<string>("Id")
@@ -446,6 +507,41 @@ namespace EventManagementService.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("EventManagementService.Model.Models.Payment", b =>
+                {
+                    b.HasOne("EventManagementService.Model.Models.Food", "Food")
+                        .WithMany("Payments")
+                        .HasForeignKey("FoodId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EventManagementService.Model.Models.PaymentType", "PaymentType")
+                        .WithMany("Payments")
+                        .HasForeignKey("PaymentTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EventManagementService.Model.Models.User", "User")
+                        .WithMany("Payments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EventManagementService.Model.Models.Venue", "Venue")
+                        .WithMany("Payments")
+                        .HasForeignKey("VenueId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Food");
+
+                    b.Navigation("PaymentType");
+
+                    b.Navigation("User");
+
+                    b.Navigation("Venue");
+                });
+
             modelBuilder.Entity("EventManagementService.Model.Models.Venue", b =>
                 {
                     b.HasOne("EventManagementService.Model.Models.EventType", "EventType")
@@ -534,6 +630,11 @@ namespace EventManagementService.Migrations
                     b.Navigation("Venues");
                 });
 
+            modelBuilder.Entity("EventManagementService.Model.Models.Food", b =>
+                {
+                    b.Navigation("Payments");
+                });
+
             modelBuilder.Entity("EventManagementService.Model.Models.FoodType", b =>
                 {
                     b.Navigation("Foods");
@@ -544,11 +645,23 @@ namespace EventManagementService.Migrations
                     b.Navigation("Foods");
                 });
 
+            modelBuilder.Entity("EventManagementService.Model.Models.PaymentType", b =>
+                {
+                    b.Navigation("Payments");
+                });
+
             modelBuilder.Entity("EventManagementService.Model.Models.User", b =>
                 {
                     b.Navigation("Foods");
 
+                    b.Navigation("Payments");
+
                     b.Navigation("Venues");
+                });
+
+            modelBuilder.Entity("EventManagementService.Model.Models.Venue", b =>
+                {
+                    b.Navigation("Payments");
                 });
 
             modelBuilder.Entity("EventManagementService.Model.Models.VenueType", b =>

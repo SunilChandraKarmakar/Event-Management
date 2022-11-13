@@ -1,8 +1,45 @@
 <div class="container">
-  <div class="row mt-3">
+  <div class="row mt-2">
     <div class="col-md-12">
-      <h3 class="text-center">Application Dashboard</h3>
+      <h3 class="text-center">Payment Report</h3>
       <hr>
+      <a class="btn btn-outline-primary" routerLink="/payment/create"><i class="fas fa-plus"></i> Payment</a>      
+    </div>
+    <div class="row mt-4 mb-4">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+              <thead>
+                <tr>
+                  <th>Basic Info</th>
+                  <th>Payment Info</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let payment of payments">
+                  <td> 
+                    Venue : {{ payment.venue.title }} <br>
+                    Food : {{ payment.food.title }}
+                  </td>
+                  <td>
+                    Payment Type : {{ payment.paymentType.name }} <br>
+                    Total Amount : {{ payment.totalAmmount }} <br>
+                    Payment Date : {{ payment.paymentDate | date: "dd/MM/YYYY" }} <br>
+                    Payment Complete : {{ payment.isPaymentComplete == true ? "Complete" : "Pendint" }}
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                 <tr>
+                  <th>Basic Info</th>
+                  <th>Payment Info</th>
+                </tr>
+              </tfoot>
+            </table>   
+          </div>
+        </div>     
+      </div>
     </div>
   </div>
 </div>

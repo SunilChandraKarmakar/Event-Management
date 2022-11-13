@@ -5,6 +5,8 @@ using EventManagementService.RepositoryService.EventTypeService;
 using EventManagementService.RepositoryService.FoodService;
 using EventManagementService.RepositoryService.FoodTypeService;
 using EventManagementService.RepositoryService.MealTypeService;
+using EventManagementService.RepositoryService.PaymentService;
+using EventManagementService.RepositoryService.PaymentTypeService;
 using EventManagementService.RepositoryService.VenueService;
 using EventManagementService.RepositoryService.VenueTypeService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -30,7 +32,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     string isSuer = builder.Configuration["JWTConfig:Issuer"];
     string audience = builder.Configuration["JWTConfig:Audience"];
 
-    option.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    option.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(key),
@@ -65,6 +67,8 @@ builder.Services.AddTransient<IFoodTypeRepository, FoodTypeRepository>();
 builder.Services.AddTransient<IMealTypeRepository, MealTypeRepository>();
 builder.Services.AddTransient<IDishTypeRepository, DishTypeRepository>();
 builder.Services.AddTransient<IFoodRepository, FoodRepository>();
+builder.Services.AddTransient<IPaymentTypeRepository, PaymentTypeRepository>();
+builder.Services.AddTransient<IPaymentRepository, PaymentRepository>();
 
 builder.Services.AddControllers()
        .AddNewtonsoftJson(options =>

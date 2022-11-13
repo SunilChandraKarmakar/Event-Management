@@ -1,4 +1,5 @@
 ﻿using EventManagementService.Model.ViewModels.Food;
+using EventManagementService.Model.ViewModels.Payment;
 using EventManagementService.Model.ViewModels.Venue;
 
 namespace EventManagementService.Model.ViewModels.User
@@ -9,6 +10,7 @@ namespace EventManagementService.Model.ViewModels.User
         {
             Foods = new HashSet<FoodViewModel>();
             Venues = new HashSet<VenueViewModel>();
+            Payments = new HashSet<PaymentViewModel>();
         }
 
         public string Id { get; set; }
@@ -21,5 +23,6 @@ namespace EventManagementService.Model.ViewModels.User
 
         public ICollection<VenueViewModel> Venues { get; set; }
         public ICollection<FoodViewModel> Foods { get; set; }
+        public ICollection<PaymentViewModel> Payments { get; set; }
     }
 }

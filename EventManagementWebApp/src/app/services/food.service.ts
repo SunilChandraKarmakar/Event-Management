@@ -64,7 +64,7 @@ export class FoodService {
       'Authorization' : `Bearer ${userInfo.dataSet.token}`
     });
 
-    const deleteFoodUrl: string = `${this.appBaseUrl}foood/delete/${id}`;
+    const deleteFoodUrl: string = `${this.appBaseUrl}food/delete/${id}`;
     return this._httpClient.delete<FoodUpdateViewModel>(deleteFoodUrl, { headers: asseccPermission });
   }
 }

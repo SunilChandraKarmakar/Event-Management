@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-md-12">
+      <h3 class="text-center">Payment</h3>
+      <hr>
+    </div>
+  </div>
+  <div class="row mt-3 justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <form class="row g-3" autocomplete="off">
+            <div class="col-md-4">
+              <label for="foodId" class="form-label">Food</label>
+              <select class="form-control"  name="foodId" [(ngModel)]="model.foodId">
+                <option *ngFor="let food of foodSelectList" [value]="food.id">{{ food.title }}</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="venueId" class="form-label">Venue</label>
+              <select class="form-control" name="venueId" [(ngModel)]="model.venueId">
+                <option *ngFor="let venue of venueSelectList" [value]="venue.id">{{ venue.title }}</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="paymentTypeId" class="form-label">Payment Type</label>
+              <select class="form-control" name="paymentTypeId" [(ngModel)]="model.paymentTypeId">
+                <option *ngFor="let paymentType of paymentTypeSelectList" [value]="paymentType.id">{{ paymentType.name }}</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="totalAmount" class="form-label">Total Amount</label>
+              <input type="number" class="form-control" name="totalAmount" [(ngModel)]="model.totalAmmount">
+            </div>
+            <div class="col-md-4">
+              <label for="paymentDate" class="form-label">Payment Date</label>
+              <input type="date" class="form-control" name="paymentDate" [(ngModel)]="model.paymentDate">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-sm btn-outline-success" (click)="onSavePayment()"><i class="fas fa-save"></i> Payment</button>
+              <a class="btn btn-sm btn-outline-info" routerLink="/dashboard" style="margin-left: 5px">
+                <i class="fas fa-list"></i> Goto List
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

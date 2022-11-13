@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Principal;
+using System.Xml;
 
 namespace EventManagementService.DatabaseSetting
 {
@@ -20,5 +22,7 @@ namespace EventManagementService.DatabaseSetting
         public DbSet<User> Users { get; set; }
         public DbSet<Venue> Venues { get; set; }
         public DbSet<Food> Foods { get; set; }
+        public DbSet<PaymentType> PaymentTypes { get; set; }
+        public DbSet<Payment> Payments { get; set; }
     }
 }

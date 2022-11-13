@@ -5,6 +5,7 @@ import { FoodCreateComponent } from './components/food/food-create/food-create.c
 import { FoodEditComponent } from './components/food/food-edit/food-edit.component';
 import { FoodListComponent } from './components/food/food-list/food-list.component';
 import { LoginComponent } from './components/login/login.component';
+import { PaymentCreateComponent } from './components/payment-create/payment-create.component';
 import { RegisterComponent } from './components/register/register.component';
 import { VenueCreateComponent } from './components/venue/venue-create/venue-create.component';
 import { VenueEditComponent } from './components/venue/venue-edit/venue-edit.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'venue/edit/:recordId', component: VenueEditComponent, pathMatch: 'full' },
   { path: 'foods', component: FoodListComponent, pathMatch: 'full' },
   { path: 'food/create', component: FoodCreateComponent, pathMatch: 'full' },
-  { path: 'food/edit/:recordId', component: FoodEditComponent, pathMatch: 'full' }
+  { path: 'food/edit/:recordId', component: FoodEditComponent, pathMatch: 'full' },
+  { path: 'payment/create', component: PaymentCreateComponent, pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -42,5 +42,6 @@ namespace EventManagementService.Model.Models
         public FoodType FoodType { get; set; }
         public MealType MealType { get; set; }
         public DishType DishType { get; set; }
+        public ICollection<Payment> Payments { get; set; }
     }
 }

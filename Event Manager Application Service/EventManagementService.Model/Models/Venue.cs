@@ -4,6 +4,11 @@ namespace EventManagementService.Model.Models
 {
     public class Venue
     {
+        public Venue()
+        {
+            Payments = new HashSet<Payment>();
+        }
+
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Please, provied any title.")]
@@ -35,5 +40,6 @@ namespace EventManagementService.Model.Models
         public User User { get; set; }
         public EventType EventType { get; set; }
         public VenueType VenueType { get; set; }
+        public ICollection<Payment> Payments { get; set; }
     }
 }

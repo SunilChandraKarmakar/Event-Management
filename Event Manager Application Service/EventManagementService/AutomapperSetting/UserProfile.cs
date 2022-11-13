@@ -5,6 +5,8 @@ using EventManagementService.Model.ViewModels.EventType;
 using EventManagementService.Model.ViewModels.Food;
 using EventManagementService.Model.ViewModels.FoodType;
 using EventManagementService.Model.ViewModels.MealType;
+using EventManagementService.Model.ViewModels.Payment;
+using EventManagementService.Model.ViewModels.PaymentType;
 using EventManagementService.Model.ViewModels.Register;
 using EventManagementService.Model.ViewModels.User;
 using EventManagementService.Model.ViewModels.Venue;
@@ -35,11 +37,15 @@ namespace EventManagementService.AutomapperSetting
             CreateMap<FoodType, FoodTypeViewModel>();
             CreateMap<MealType, MealTypeViewModel>();
             CreateMap<DishType, DishTypeViewModel>();
+            CreateMap<PaymentType, PaymentTypeViewModel>();
 
             CreateMap<Food, FoodViewModel>();
             CreateMap<FoodCreateViewModel, Food>();
             CreateMap<Food, FoodUpdateViewModel>();
             CreateMap<FoodUpdateViewModel, Food>();
+
+            CreateMap<Payment, PaymentViewModel>();
+            CreateMap<PaymentCreateViewModel, Payment>();
         }
     }
 }
