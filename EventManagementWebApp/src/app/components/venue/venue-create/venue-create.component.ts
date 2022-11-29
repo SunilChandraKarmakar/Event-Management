@@ -106,7 +106,7 @@ export class VenueCreateComponent implements OnInit {
       this._venueService.create(this.model).subscribe((res) => {
         this._spinnerService.hide();
         this._toastrService.success("Venue create successfull.", "Successfull");
-        this._router.navigate(['/venues']);
+        this._router.navigate(['/food/create']);
         return;
       }, 
       (error) => {

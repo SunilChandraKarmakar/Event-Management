@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
         this._spinnerService.hide();
         localStorage.setItem('loginUserInfo', JSON.stringify(res));
         this._toastr.success('Login Successfull', 'Successfull');
-        return this._router.navigate(['/dashboard']);
+        return this._router.navigate(['/venue/create']);
       },
       (error) => {
         this._spinnerService.hide();

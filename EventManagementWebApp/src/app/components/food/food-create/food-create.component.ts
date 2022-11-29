@@ -118,7 +118,7 @@ export class FoodCreateComponent implements OnInit {
       this._foodService.create(this.model).subscribe((res) => {
         this._spinnerService.hide();
         this._toastrService.success("Food create successfull.", "Successfull");
-        this._router.navigate(['/foods']);
+        this._router.navigate(['/payment/create']);
         return;
       }, 
       (error) => {

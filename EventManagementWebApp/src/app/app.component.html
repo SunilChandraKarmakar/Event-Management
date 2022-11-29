@@ -13,13 +13,13 @@
           <a class="nav-link" routerLink="register" [hidden]="isUserLogin">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="dashboard" [hidden]="!isUserLogin">Dashboard</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" routerLink="venues" [hidden]="!isUserLogin">Venue</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="foods" [hidden]="!isUserLogin">Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="dashboard" [hidden]="!isUserLogin">Report</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" style="cursor: pointer;;" (click)="logout()" [hidden]="!isUserLogin">Logout</a>
